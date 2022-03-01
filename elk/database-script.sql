@@ -1,4 +1,4 @@
-CREATE DATABASE tenant_db_2;
+CREATE DATABASE tenant_db_1;
 
 CREATE TABLE `tbl_documents` (
   `doc_id` int(11) NOT NULL,
@@ -19,5 +19,5 @@ CREATE TABLE `tbl_documents` (
 );
 
 INSERT INTO `tbl_documents` (`doc_id`, `doc_name`, `doc_description`) VALUES
-(1, 'ELK Tutorial.pdf', 'This file contains a tutorial on ELK Stack'),
-(2, 'Accounts & Expenses.xlsx', 'This file contains accounts and expenses');
+(1, 'Invoice-1120293.pdf', 'This file represents an invoice'),
+(2, 'Multi-Tenancy.docx', 'This file contains a blog on Multi-Tenancy');

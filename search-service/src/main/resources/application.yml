@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: search-svc
+
+server:
+  port: 1234
+
+elasticsearch:
+  server:
+    host: localhost
+    port: 9200
+    scheme: http
