@@ -33,9 +33,7 @@ public class SearchService {
         searchSourceBuilder.query(QueryBuilders.wildcardQuery("doc_name", keyword + "*"));
         searchSourceBuilder.fetchSource(null, excludes);
 
-        // defining a limit of 10 search hits. So 10 of most matching results
-        // will be returned for the given keyword
-        searchSourceBuilder.size(10);
+        searchSourceBuilder.size(10)
         searchRequest.source(searchSourceBuilder);
 
         SearchResponse response = client.search(searchRequest, RequestOptions.DEFAULT);
